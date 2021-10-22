@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.tcs.service;
 
 import java.sql.SQLException;
@@ -12,8 +9,12 @@ import org.springframework.stereotype.Component;
 import com.tcs.bean.Student;
 import com.tcs.dao.StudentDAOInterFace;
 import com.tcs.exception.StudentNotRegisteredException;
+import com.tcs.exception.UserNotFoundException;
 
-
+/**
+ * @author SUSHMITHA SHETTY
+ *
+ */
 @Component
 public class StudentServiceOperation implements StudentInterFace {
 
@@ -59,4 +60,16 @@ public class StudentServiceOperation implements StudentInterFace {
 		return students.deleteStudent(id);
 	}
 
+	@Override
+	public Student updateStudent(int id, Student student) throws SQLException {
+		// TODO Auto-generated method stub
+		return students.update(id, student);
+	}
+
+	@Override
+	public boolean loginStudent(String studentEmail, String studentPassword) throws UserNotFoundException {
+		// TODO Auto-generated method stub
+		return students.studentLogin(studentEmail, studentPassword);
+	}
+	
 }

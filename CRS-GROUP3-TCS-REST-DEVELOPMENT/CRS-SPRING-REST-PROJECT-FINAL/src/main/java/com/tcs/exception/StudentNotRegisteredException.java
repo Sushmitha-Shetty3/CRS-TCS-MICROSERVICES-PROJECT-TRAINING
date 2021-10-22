@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.tcs.exception;
 
 public class StudentNotRegisteredException extends Exception {

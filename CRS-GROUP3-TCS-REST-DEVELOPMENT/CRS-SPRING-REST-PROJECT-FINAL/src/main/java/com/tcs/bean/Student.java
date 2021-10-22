@@ -1,8 +1,9 @@
-/**
- * 
- */
-package com.tcs.bean;
 
+package com.tcs.bean;
+/**
+ * @author SUSHMITHA SHETTY
+ *
+ */
 public class Student{
 	private int studentId;
 	private String studentDept;
@@ -10,7 +11,7 @@ public class Student{
 	private String studentEmail;
 	private String studentMobile;
 	private String studentGender;
-	private String studentPasword;
+	private String studentPassword;
 	
 	public Student() {
 		super();
@@ -18,7 +19,7 @@ public class Student{
 	}
 
 	public Student(int studentId, String studentDept, String studentName, String studentEmail, String studentMobile,
-			String studentGender, String studentPasword) {
+			String studentGender, String studentPassword) {
 		super();
 		this.studentId = studentId;
 		this.studentDept = studentDept;
@@ -26,7 +27,7 @@ public class Student{
 		this.studentEmail = studentEmail;
 		this.studentMobile = studentMobile;
 		this.studentGender = studentGender;
-		this.studentPasword = studentPasword;
+		this.studentPassword = studentPassword;
 	}
 
 	/**
@@ -114,16 +115,16 @@ public class Student{
 	}
 
 	/**
-	 * @return the studentPasword
+	 * @return the studentPassword
 	 */
-	public String getStudentPasword() {
-		return studentPasword;
+	public String getStudentPassword() {
+		return studentPassword;
 	}
 
 	/**
-	 * @param studentPasword the studentPasword to set
+	 * @param studentPasword the studentPassword to set
 	 */
-	public void setStudentPasword(String studentPasword) {
-		this.studentPasword = studentPasword;
+	public void setStudentPassword(String studentPassword) {
+		this.studentPassword = studentPassword;
 	}
 }
